@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com formulários</title>
+</head>
+<body>
+    
+    <h1>Trabalhando com formulários</h1>
+
+    <table>
+
+    <!-- FORM: Atributo formulário -->
+        <form action="">
+
+            <tr>
+                <!-- LABEL: Legenda para especifica os campos a serem preenchidos no formulário -->
+                <!-- O uso do FOR (NO LABEL) é para relacioná-lo com o ID (DO INPUT). Dessa forma, ao clicar sobre o LABEL(DESCRIÇÃO) o input será ativado automaticamente-->
+                <!-- REQUIRED: Quer dizer que o campo é obrigatório -->
+                <td><label for="nome_">Nome:</label>
+                <!-- INPUT: São dados de entrada -->
+                <input type="text" id="nome_" placeholder="Digite seu nome" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="email_">E-mail:</label>
+                <input type="email" id="email_" placeholder="Digite seu email" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="senha_">Senha:</label>
+                <input type="password" id="senha_" placeholder="Digite sua senha" required></td>
+            </tr>
+
+            <tr>
+                <td><h3>Escolha seu animal de estimação</h3></td>
+            </tr>
+
+            <tr>
+                <td><input type="radio" id="opcao1" name="animal" value="cachorro">
+                <label for="opcao1">Cachorro</label></td>
+            </tr>
+
+            <tr>
+                <td><input type="radio" id="opcao2" name="animal" value="gato">
+                <label for="opcao2">Gato</label></td>
+            </tr>
+
+            <tr>
+                <td><input type="radio" id="opcao3" name="animal" value="peixe">
+                <label for="opcao3">Peixe</label></td>
+            </tr>
+
+            <tr>
+                <td><h3>Escolha seu aparelho</h3></td>
+            </tr>
+
+            <tr>
+                <td><input type="checkbox" id="opcao1" name="animal" value="cachorro">
+                <label for="opcao1">TV</label></td>
+            </tr>
+
+            <tr>
+                <td><input type="checkbox" id="opcao2" name="animal" value="gato">
+                <label for="opcao2">Celular</label></td>
+            </tr>
+
+            <tr>
+                <td><input type="checkbox" id="opcao3" name="animal" value="peixe">
+                <label for="opcao3">Notebook</label></td>
+            </tr>
+
+            <tr>
+                <td>
+                    
+                    <h3>Escolha seu time do coração</h3>
+
+                    <select>
+                        <option value="Corinthians">Corinthians</option>
+                        <option value="São Paulo">São Paulo</option>
+                    </select>
+
+                </td>
+                
+            </tr>
+
+           
+            <tr>
+                <!-- INPUT TYPE SUBMIT: É o botão enviar -->
+                <td> <br> 
+                    <input type="submit" value="Enviar Formulário">
+                    <label for=""></label>
+                </td>
+            </tr>
+
+        </form>
+
+    </table>  
+
+</body>
+</html>
